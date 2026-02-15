@@ -36,7 +36,9 @@ const CreditCard = ({ card, onDelete, onClick, isFlipped }) => {
           <div className="absolute bottom-0 left-0 -ml-10 -mb-10 w-40 h-40 bg-pink-500 opacity-20 rounded-full blur-2xl"></div>
 
           {/* Brand Name */}
-          <div className="absolute top-6 right-8 text-sm font-bold opacity-75">{brand.name}</div>
+          {/* [BUG - COLOR] Brand name text color nearly invisible on dark gradient */}
+          {/* [FIX] Change 'text-slate-400' to 'text-white' */}
+          <div className="absolute top-6 right-8 text-sm font-bold opacity-75 text-slate-400">{brand.name}</div>
 
           {/* EMV Chip */}
           <div className="absolute top-8 left-8 w-12 h-10 bg-yellow-200 rounded-md border border-yellow-300 overflow-hidden opacity-90 shadow-sm flex flex-col justify-between p-px">
@@ -94,12 +96,14 @@ const CreditCard = ({ card, onDelete, onClick, isFlipped }) => {
       </div>
 
       {/* Delete Button */}
+      {/* [BUG - LAYERS] Delete button positioned far below card view with z-0 */}
+      {/* [FIX] Change 'absolute bottom-96 left-0 z-0' to 'absolute -top-8 right-0' */}
       <button
         onClick={(e) => {
           e.stopPropagation();
           onDelete();
         }}
-        className="absolute -top-8 right-0 text-red-500 hover:text-red-700 font-bold text-sm"
+        className="absolute bottom-96 left-0 text-red-500 hover:text-red-700 font-bold text-sm z-0"
       >
         ✕ Delete
       </button>

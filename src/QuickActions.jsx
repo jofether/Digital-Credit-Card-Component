@@ -15,7 +15,9 @@ const QuickActions = () => {
   return (
     <div className="mb-12">
       <h2 className="text-lg font-bold text-slate-800 mb-4">Quick Actions</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {/* [BUG - LAYOUT] Using flex-col stacks items vertically instead of grid */}
+      {/* [FIX] Change 'flex flex-col' to 'grid grid-cols-2 md:grid-cols-4' */}
+      <div className="flex flex-col gap-4">
         {actions.map((action) => (
           <button
             key={action.action}

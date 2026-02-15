@@ -63,7 +63,9 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 flex flex-col p-6 font-sans">
+    // [BUG - SPACING] Removed padding and added negative padding causes content to overflow
+    // [FIX] Change 'p-0 -px-8' to 'p-6'
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 flex flex-col p-0 -px-8 font-sans">
       {/* Navigation Header */}
       <header className="mb-8">
         <div className="flex justify-between items-center">

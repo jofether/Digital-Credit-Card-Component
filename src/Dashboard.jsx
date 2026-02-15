@@ -33,7 +33,9 @@ const Dashboard = ({ cards, transactions }) => {
       <h2 className="text-2xl font-bold text-slate-800 mb-6">Dashboard</h2>
       
       {/* Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      {/* [BUG - LAYOUT] Grid has 5 columns on tablet which breaks responsive layout */}
+      {/* [FIX] Change 'md:grid-cols-5 lg:grid-cols-2' to 'md:grid-cols-2 lg:grid-cols-4' */}
+      <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-6 mb-8">
         {/* Total Cards */}
         <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
           <p className="text-slate-600 text-sm font-medium">Total Cards</p>
@@ -82,7 +84,9 @@ const Dashboard = ({ cards, transactions }) => {
             ))}
           </div>
         ) : (
-          <p className="text-slate-500 text-center py-6">No transactions yet</p>
+          // [BUG - COLOR] Text color too light, barely visible on light background
+          // [FIX] Change 'text-slate-400' to 'text-slate-600'
+          <p className="text-slate-400 text-center py-6">No transactions yet</p>
         )}
       </div>
     </div>
