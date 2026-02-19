@@ -36,7 +36,7 @@ const CreditCard = ({ card, onDelete, onClick, isFlipped }) => {
           <div className="absolute bottom-0 left-0 -ml-10 -mb-10 w-40 h-40 bg-pink-500 opacity-20 rounded-full blur-2xl"></div>
 
           {/* Brand Name */}
-          <div className="absolute top-6 right-8 text-sm font-bold opacity-75">{brand.name}</div>
+          <div className="absolute top-6 right-8 text-sm font-bold opacity-75 text-white">{brand.name}</div>
 
           {/* EMV Chip */}
           <div className="absolute top-8 left-8 w-12 h-10 bg-yellow-200 rounded-md border border-yellow-300 overflow-hidden opacity-90 shadow-sm flex flex-col justify-between p-px">

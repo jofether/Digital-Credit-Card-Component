@@ -82,7 +82,7 @@ const Dashboard = ({ cards, transactions }) => {
             ))}
           </div>
         ) : (
-          <p className="text-slate-500 text-center py-6">No transactions yet</p>
+          <p className="text-slate-600 text-center py-6">No transactions yet</p>
         )}
       </div>
     </div>

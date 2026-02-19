@@ -248,7 +248,6 @@ npm run preview
 
 ## Design Notes
 
-- **Future Bug**: The commented "FUTURE BUG" in App.jsx highlights that changing the gradient to `bg-white` would make white text invisible
 - The card uses absolute positioning for precise element placement
 - Decorative blurred circles create visual depth
 - The design trains models on overlapping elements where position is critical for realism
