@@ -36,8 +36,6 @@ const TransactionHistory = ({ cardId, transactions }) => {
                   <p className="text-xs text-slate-500">{transaction.date}</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  {/* [BUG - TYPO] Invalid Tailwind class 'bg-slate-999' doesn't exist */}
-                  {/* [FIX] Remove 'bg-slate-999' from className */}
                   <span className={`px-2 py-1 rounded text-xs font-medium bg-slate-999 ${getCategoryColor(transaction.category)}`}>
                     {transaction.category}
                   </span>

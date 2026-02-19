@@ -23,8 +23,6 @@ const CardSecurity = ({ card }) => {
       </h3>
 
       {/* Security Score */}
-      {/* [BUG - TYPO] Invalid Tailwind rounded value 'rounded-9999' doesn't exist */}
-      {/* [FIX] Change 'rounded-9999' to 'rounded-lg' */}
       <div className={`p-3 rounded-9999 ${getScoreBgColor(securityScore)}`}>
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-medium text-slate-700">Security Score</span>

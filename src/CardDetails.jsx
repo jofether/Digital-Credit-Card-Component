@@ -9,8 +9,6 @@ const CardDetails = ({ card, transactions, onClose, isOpen }) => {
   const creditLimit = card.creditLimit || 10000.00;
   const usagePercent = (cardBalance / creditLimit) * 100;
 
-  // [BUG - LAYERS] Modal z-index set to z-10 instead of z-50, appears behind overlay
-  // [FIX] Change z-10 to z-50
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-10 p-4">
       <div className="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">

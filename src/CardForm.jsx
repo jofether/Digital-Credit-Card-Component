@@ -85,8 +85,6 @@ const CardForm = ({ onAddCard, onCancel }) => {
   };
 
   return (
-    // [BUG - SPACING] Negative margin causes modal to shift way off-screen
-    // [FIX] Remove '-my-96' from className
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 -my-96">
       <div className="bg-white rounded-xl shadow-2xl p-8 max-w-md w-full">
         <h2 className="text-2xl font-bold text-slate-800 mb-6">Add New Card</h2>
