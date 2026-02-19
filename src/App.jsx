@@ -95,8 +95,7 @@ function App() {
               {cards.map((card) => (
                 <div
                   key={card.id}
-                  className="flex flex-col items-center cursor-pointer group"
-                  onClick={() => openCardDetails(card)}
+                  className="flex flex-col items-center group"
                 >
                   <CreditCard
                     card={card}
