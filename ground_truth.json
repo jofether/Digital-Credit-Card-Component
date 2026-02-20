@@ -1,0 +1,105 @@
+{
+  "repository": "Digital Credit Card Component",
+  "bugs": [
+    {
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/App.jsx",
+      "line_number": 66,
+      "clean_code": "<div className=\"min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 flex flex-col p-6 font-sans\">",
+      "buggy_code": "<div className=\"min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 flex flex-col p-0 -px-8 font-sans\">",
+      "css_selector": ".min-h-screen",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "cursor-pointer",
+      "file_modified": "src/App.jsx",
+      "line_number": 96,
+      "clean_code": "className=\"flex flex-col items-center cursor-pointer group\"",
+      "buggy_code": "className=\"flex flex-col items-center group\"",
+      "css_selector": ".cursor-pointer",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/CardDetails.jsx",
+      "line_number": 13,
+      "clean_code": "<div className=\"fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4\">",
+      "buggy_code": "<div className=\"fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-10 p-4\">",
+      "css_selector": ".z-50",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/CardForm.jsx",
+      "line_number": 88,
+      "clean_code": "<div className=\"fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4\">",
+      "buggy_code": "<div className=\"fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 -my-96\">",
+      "css_selector": ".fixed",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "border-radius",
+      "file_modified": "src/CardSecurity.jsx",
+      "line_number": 26,
+      "clean_code": "<div className={`p-3 rounded-lg ${getScoreBgColor(securityScore)}`}>",
+      "buggy_code": "<div className={`p-3 rounded-9999 ${getScoreBgColor(securityScore)}`}>",
+      "css_selector": ".rounded-lg",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/CreditCard.jsx",
+      "line_number": 39,
+      "clean_code": "<div className=\"absolute top-6 right-8 text-sm font-bold opacity-75 text-white\">{brand.name}</div>",
+      "buggy_code": "<div className=\"absolute top-6 right-8 text-sm font-bold opacity-75 text-slate-400\">{brand.name}</div>",
+      "css_selector": ".text-white",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "position",
+      "file_modified": "src/CreditCard.jsx",
+      "line_number": 102,
+      "clean_code": "className=\"absolute -top-8 right-0 text-red-500 hover:text-red-700 font-bold text-sm\"",
+      "buggy_code": "className=\"absolute bottom-96 left-0 text-red-500 hover:text-red-700 font-bold text-sm z-0\"",
+      "css_selector": ".absolute",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid-columns",
+      "file_modified": "src/Dashboard.jsx",
+      "line_number": 36,
+      "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8\">",
+      "buggy_code": "<div className=\"grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-6 mb-8\">",
+      "css_selector": ".grid",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/Dashboard.jsx",
+      "line_number": 85,
+      "clean_code": "<p className=\"text-slate-600 text-center py-6\">No transactions yet</p>",
+      "buggy_code": "<p className=\"text-slate-400 text-center py-6\">No transactions yet</p>",
+      "css_selector": ".text-slate-600",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/QuickActions.jsx",
+      "line_number": 18,
+      "clean_code": "<div className=\"grid grid-cols-2 md:grid-cols-4 gap-4\">",
+      "buggy_code": "<div className=\"flex flex-col gap-4\">",
+      "css_selector": ".grid",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    }
+  ]
+}
