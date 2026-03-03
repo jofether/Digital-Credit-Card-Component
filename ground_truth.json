@@ -9,7 +9,7 @@
       "line_number": 66,
       "clean_code": "<div className=\"min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 flex flex-col p-6 font-sans\">",
       "buggy_code": "<div className=\"min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 flex flex-col p-0 -px-8 font-sans\">",
-      "css_selector": ".min-h-screen",
+      "css_selector": ".min-h-screen.bg-gradient-to-br",
       "bounding_box": { "x": 0, "y": 0, "width": 1280, "height": 720 }
     },
     {
@@ -20,7 +20,7 @@
       "line_number": 96,
       "clean_code": "className=\"flex flex-col items-center cursor-pointer group\"",
       "buggy_code": "className=\"flex flex-col items-center group\"",
-      "css_selector": ".cursor-pointer",
+      "css_selector": "div.grid > div > div.flex.flex-col.items-center.group",
       "bounding_box": {
         "x": 0,
         "y": 1394,
@@ -36,7 +36,7 @@
       "line_number": 13,
       "clean_code": "<div className=\"fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4\">",
       "buggy_code": "<div className=\"fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-10 p-4\">",
-      "css_selector": ".z-50",
+      "css_selector": ".fixed.inset-0.bg-black.bg-opacity-50",
       "bounding_box": { "x": 0, "y": 0, "width": 1280, "height": 720 }
     },
     {
@@ -47,12 +47,12 @@
       "line_number": 88,
       "clean_code": "<div className=\"fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4\">",
       "buggy_code": "<div className=\"fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 -my-96\">",
-      "css_selector": ".fixed",
+      "css_selector": ".fixed.inset-0.bg-black.z-50",
       "bounding_box": {
         "x": 0,
-        "y": -384,
+        "y": 0,
         "width": 1280,
-        "height": 1488
+        "height": 1100
       }
     },
     {
@@ -63,8 +63,8 @@
       "line_number": 26,
       "clean_code": "<div className={`p-3 rounded-lg ${getScoreBgColor(securityScore)}`}>",
       "buggy_code": "<div className={`p-3 rounded-9999 ${getScoreBgColor(securityScore)}`}>",
-      "css_selector": ".rounded-lg",
-      "bounding_box": { "x": 0, "y": 0, "width": 1280, "height": 720 }
+      "css_selector": "div.space-y-4 > div.p-3[class*='rounded-']",
+      "bounding_box": { "x": 40, "y": 280, "width": 320, "height": 120 }
     },
     {
       "comment": "Bug #6 - text-color",
@@ -74,12 +74,12 @@
       "line_number": 39,
       "clean_code": "<div className=\"absolute top-6 right-8 text-sm font-bold opacity-75 text-white\">{brand.name}</div>",
       "buggy_code": "<div className=\"absolute top-6 right-8 text-sm font-bold opacity-75 text-slate-400\">{brand.name}</div>",
-      "css_selector": ".text-white",
+      "css_selector": ".w-96.h-60 .absolute.top-6.right-8.font-bold",
       "bounding_box": {
-        "x": 336,
-        "y": 132,
-        "width": 27,
-        "height": 20
+        "x": 286,
+        "y": 112,
+        "width": 100,
+        "height": 40
       }
     },
     {
@@ -90,12 +90,12 @@
       "line_number": 102,
       "clean_code": "className=\"absolute -top-8 right-0 text-red-500 hover:text-red-700 font-bold text-sm\"",
       "buggy_code": "className=\"absolute bottom-96 left-0 text-red-500 hover:text-red-700 font-bold text-sm z-0\"",
-      "css_selector": ".absolute",
+      "css_selector": "button.absolute.text-red-500.font-bold",
       "bounding_box": {
-        "x": 11,
-        "y": -56,
-        "width": 58,
-        "height": 20
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600
       }
     },
     {
@@ -106,10 +106,10 @@
       "line_number": 36,
       "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8\">",
       "buggy_code": "<div className=\"grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-6 mb-8\">",
-      "css_selector": ".grid",
+      "css_selector": ".grid.grid-cols-1.gap-6.mb-8",
       "bounding_box": {
         "x": 0,
-        "y": -1130,
+        "y": 800,
         "width": 1280,
         "height": 296
       }
@@ -122,7 +122,7 @@
       "line_number": 85,
       "clean_code": "<p className=\"text-slate-600 text-center py-6\">No transactions yet</p>",
       "buggy_code": "<p className=\"text-slate-400 text-center py-6\">No transactions yet</p>",
-      "css_selector": ".text-slate-600",
+      "css_selector": "p.text-center.py-6",
       "bounding_box": {
         "x": 340,
         "y": 400,
@@ -138,10 +138,10 @@
       "line_number": 18,
       "clean_code": "<div className=\"grid grid-cols-2 md:grid-cols-4 gap-4\">",
       "buggy_code": "<div className=\"flex flex-col gap-4\">",
-      "css_selector": ".grid",
+      "css_selector": "div.mb-12:nth-of-type(2) > div.gap-4",
       "bounding_box": {
         "x": 0,
-        "y": -434,
+        "y": 1200,
         "width": 1280,
         "height": 438
       }
