@@ -1,0 +1,16 @@
+{
+  "actions": [
+    {
+      "name": "bug-3-OpenCardDetailsModal",
+      "selector": "div.group > button.bg-slate-700"
+    },
+    {
+      "name": "bug-4-OpenCardFormModal",
+      "selector": "button.from-purple-600.to-indigo-600"
+    },
+    {
+      "name": "bug-5-OpenCardDetailsModal",
+      "selector": "div.group > button.bg-slate-700"
+    }
+  ]
+}
